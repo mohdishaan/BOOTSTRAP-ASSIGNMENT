@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="data:image/jpeg;base64,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" alt="" width="30" height="24">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://pwskills.com/course/data-science-with-generative-ai-course/?from=course_listing&position=featured_courses">Data Science with generative AI</a></li>
+                  <li><a class="dropdown-item" href="https://pwskills.com/course/best-full-stack-web-development/?from=course_listing&position=featured_courses">Full stack development</a></li>
+                  <li><a class="dropdown-item" href="https://pwskills.com/course/data-analytics-course-hinglish-June/?from=course_listing&position=featured_courses">Data Analytics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Job Portal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PW skills Lab</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Login to your account</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                            <div class="form-text" id="basic-addon4">We'll never share your email with anyone else.</div>
+                        </div>
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>
